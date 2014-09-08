@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 	validates :email, :presence => true
 	validates :email, :uniqueness => true
-	validates :password, :presence => true,
-						 :length => {:max => 20},
-						 :length => {:min => 7}
+	validates :password, :presence => true
+	validates_length_of :password, :maximum => 20
+	validates_length_of :password,  :minimum => 7
 end
