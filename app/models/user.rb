@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
 	validates_length_of :password, :maximum => 20
 	validates_length_of :password,  :minimum => 7
 	has_secure_password
+	has_many :articles
 end

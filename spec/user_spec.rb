@@ -7,4 +7,5 @@ describe User do
 	it { should ensure_length_of(:password).is_at_least(7) }
 	it { should ensure_length_of(:password).is_at_most(20) }
 	it { should have_secure_password }
+	it { should have_many :articles }
 end
