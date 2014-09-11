@@ -13,3 +13,63 @@
  *= require_tree .
  *= require_self
  */
+
+
+input {
+    font-size: 20px;
+    padding-top:20px;
+    padding-bottom:5px;
+}
+
+input {
+    border: 0px none;
+    border-bottom:1px solid #C2C1BF;
+}
+
+*:focus {
+	outline:none;
+}
+
+li {
+	list-style: none;
+}
+
+.body {
+	text-align:center;
+	padding:20px;
+}
+
+body {
+	background-image: url(http://icanbecreative.com/res/AbstractBg/purple_color_flow-wide.jpg);
+}
+
+h1 {
+	color:white;
+}
+h2 {
+	color:black;
+}
+
+a {
+    color: #ffffff;
+}
+
+form {
+	color:black;
+}
+
+.button {
+	border-radius:5px;
+	padding:-10px;
+	margin-top:10px;
+}
+
+#signup {
+	background-color:white;
+	border:1.5px solid gray;
+	border-radius:40px;
+	margin-top:5% !important;
+	padding:20px;
+	width:30%;
+	margin:auto;
+}

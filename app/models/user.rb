@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 	validates_format_of :email, :with => /@/
 	validates :password, :presence => true 
 	validates :password, numericality: { any: true, 
-		message: "Password must have at least one number"}
+		message: "must have at least one number"}
 	validates_length_of :password, :maximum => 20
 	validates_length_of :password,  :minimum => 7
 		
