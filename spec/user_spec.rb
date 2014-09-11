@@ -7,6 +7,8 @@ describe User do
 	it { should validate_presence_of :password }
 	it { should ensure_length_of(:password).is_at_least(7) }
 	it { should ensure_length_of(:password).is_at_most(20) }
+	it { should validate_numericality_of(:password).
+      with_message("Password must have at least one number") }	
 	it { should have_secure_password }
 	it { should have_many :articles }
 end
