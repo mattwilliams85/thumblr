@@ -1,7 +1,8 @@
 <% if object.errors.any? %>
-<% asdf %>
-	<% object.errors.full_messages.each do |error| %>
-		<p><%= error %></p>
-	<% end %>
-<% end %>
+    <div class="warning">
+      <% object.errors.full_messages.each do |message| %>
+        <li>  <%= flash[:alert] = message %> </li>
+      <% end %>
+    </div>
+  <% end %>
 

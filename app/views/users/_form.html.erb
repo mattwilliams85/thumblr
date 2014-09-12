@@ -1,11 +1,13 @@
-<%= render "/layouts/errors", :object => @user %>
-<br>
-<form>
+
+<form role="form">
 <%= form_for(@user) do |f| %>
+	<div class="form-group">
 	<%= f.text_field :email, placeholder: 'Email' %> 
 	<%= f.password_field :password, placeholder: 'Password'  %> 
-	<%= f.password_field :password_confirmation, placeholder: 'Confirm'   %> 
-	
-   	<%= f.submit(:class => "button") %> 
+	<%= f.password_field :password_confirmation, placeholder: 'Confirm'   %>
+	<%= render "/layouts/errors", :object => @user %>
+	</div>
+   	<%= f.submit("Ready to Thumble!", :class => "button btn") %> 
 <% end %>
 </form>
+

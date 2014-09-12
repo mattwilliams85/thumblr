@@ -14,16 +14,12 @@
  *= require_self
  */
 
-
-input {
-    font-size: 20px;
-    padding-top:20px;
-    padding-bottom:5px;
-}
-
 input {
     border: 0px none;
     border-bottom:1px solid #C2C1BF;
+    font-size: 20px;
+    padding-top:20px;
+    padding-bottom:5px;
 }
 
 *:focus {
@@ -40,36 +36,91 @@ li {
 }
 
 body {
-	background-image: url(http://icanbecreative.com/res/AbstractBg/purple_color_flow-wide.jpg);
+	background-image:url("./purple.jpg");
+}
+
+.blue {
+	color:#D8EDFF;
+	font-style:bold;
+}
+
+.white {
+	color:white;
+}
+
+.navbar-text {
+	font-size:1.2em;
 }
 
 h1 {
 	color:white;
+	font-family: 'Paytone One';
 }
 h2 {
 	color:black;
+	font-weight:400;
 }
 
-a {
-    color: #ffffff;
+a:link {
+    background-color: transparent;
+    color: #34DDDD;
+    text-decoration: none;
 }
 
 form {
 	color:black;
 }
 
-.button {
-	border-radius:5px;
-	padding:-10px;
-	margin-top:10px;
+.center {
+	margin:auto;
 }
 
-#signup {
+.button {
+	font-weight:600;
+	border-radius:5px;
+	margin-top:20px;
+	background-color:#23B294;
+	color:white;
+	padding:10px 10px 10px 10px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+#login {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.button:hover {
+	background-color:#1E9C81;
+	color:white;
+}
+
+.title {
+	width:27%;
+	margin-top:5%;
+}
+
+.title h1 {
+	font-size:3.7em;
+}
+
+.navbar-right {
+	padding-right:15px;
+}
+
+.warning {
+	background-color:red;
+	color:white;
+}
+
+.signup {
 	background-color:white;
 	border:1.5px solid gray;
 	border-radius:40px;
-	margin-top:5% !important;
-	padding:20px;
-	width:30%;
-	margin:auto;
+	padding-top:10px;
+	padding-bottom:40px;
+	width:27%;
+	box-shadow: 0 10px 40px #110457;
 }
