@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bcrypt'
 gem 'capybara'
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development do
   gem 'better_errors'
