@@ -1,5 +1,6 @@
 <% if object.errors.any? %>
     <div class="warning">
+
       <% object.errors.full_messages.each do |message| %>
         <li>  <%= flash[:alert] = message %> </li>
       <% end %>
