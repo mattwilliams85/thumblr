@@ -9,13 +9,12 @@
 </head>
 <body>
 
-
-
-<div class="row body">
 <%= yield %>
-</div>
+
 <% if current_user %>
+<div id="logout">
 <h3> <%= link_to "Logout", session_path("current"), method: "delete" %> </h3>
+</div>
 <% end %>
 
 </body>

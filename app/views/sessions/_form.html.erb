@@ -1,13 +1,13 @@
-<%= render "/layouts/errors", :object => @user %>
-
 <div class="signup center">
-	<form role="form">
-<%= form_tag sessions_path do %>
-	<div class="form-group"> 
-		<%= text_field :email, nil, placeholder: 'Email'%> 
-		<%= password_field :password, nil, placeholder: 'Password'  %> 
-	</div >
-	
-	<%= submit_tag("Login", :class => "button btn", :id => "login") %>
-<% end %>
-</form>
+	<br>
+	<%= render "layouts/errors", :object => @user %>
+	<%= form_tag sessions_path do %>
+		<form role="form">
+		<div class="form-group"> 
+			<%= text_field :email, nil, placeholder: 'Email'%> 
+			<%= password_field :password, nil, placeholder: 'Password'  %> 
+		</div >
+		<%= submit_tag("Login", :class => "button btn", :id => "login") %>
+	</form>
+	<% end %>
+</div>

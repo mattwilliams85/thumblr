@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 	before_filter :logged_in?, only: [:new]
 	
 	def new
-		@user = User.new
+		@user ||= User.new
 	end
 
 	def create
@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 			session[:user_id] = @user.id
 			redirect_to user_path(@user)
 		else 
-			redirect_to "/"
+			render "new"
 		end
 	end
 

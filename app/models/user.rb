@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
 	validates :email, :uniqueness => true
 	validates_format_of :email, :with => /@/
 	validates :password, :presence => true 
-	validates :password, numericality: { any: true, 
-		message: "must have at least one number"}
+	validates_format_of :password, :with => /(?=.*[\d\W])/,
+        :message => "must contain at least one number or special character"
 	validates_length_of :password, :maximum => 20
 	validates_length_of :password,  :minimum => 7
 		
@@ -12,7 +12,4 @@ class User < ActiveRecord::Base
 	has_many :articles
 
 end
-
-# validates :legacy_code, format: { with: /\A[a-zA-Z]+\z/,
-#     message: "only allows letters" }
 

@@ -31,12 +31,26 @@ li {
 }
 
 .body {
+	position:absolute;
 	text-align:center;
-	padding:20px;
+	width:80%;
+	height:110%;
+	margin-left:10%;
+	margin-right:10%;
+	/*border-radius:20px;*/
+	background-image:url("./purple.jpg");
 }
 
-body {
+.root {
+	text-align:center;
+	padding:20px;
+	height:100%;
+	margin:auto;
 	background-image:url("./purple.jpg");
+}
+
+html, body {
+	height:100%;
 }
 
 .blue {
@@ -111,8 +125,28 @@ form {
 }
 
 .warning {
-	background-color:red;
+	background-color:#FF2863;
 	color:white;
+}
+
+.navbar {
+	height:5%;
+	width:100%;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  font-size:2em;
+}
+
+.navbar-nav li {
+	padding:0 10px 0 10px;
 }
 
 .signup {
