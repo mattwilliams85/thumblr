@@ -32,12 +32,10 @@ li {
 
 .body {
 	position:absolute;
-	/*text-align:center;*/
 	width:80%;
 	height:100%;
 	margin-left:10%;
 	margin-right:10%;
-	/*border-radius:20px;*/
 	background-image:url("./purple.jpg");
 }
 
@@ -55,6 +53,12 @@ html, body {
 	height:100% !important;
 }
 
+.edit-form input {
+	opacity:0.5;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
 .blue {
 	color:#D8EDFF;
 	font-style:bold;
@@ -69,7 +73,7 @@ html, body {
 }
 
 .avatar {
-	margin-top:50px !important;
+	margin-top:40px !important;
 	background-color:white;
 	border-radius:100%;
 	margin-left:5%;
@@ -80,10 +84,10 @@ html, body {
 
 }
 
-.avatar img {http://localhost:3000/users/7#
-overflow:hidden;
-max-width:270px;
-min-width:270px;
+.avatar img {
+	overflow:hidden;
+	max-width:270px;
+	min-width:270px;
 }
 
 .navbar-collapse .navbar-right {
@@ -101,9 +105,18 @@ min-width:270px;
 	overflow:hidden;
 }
 
-.profile .btn-default {
+.edit {
+	float:center;
+	border-bottom:1px solid #EBF9FF;
+	padding-bottom:50px;
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+* .btn-default {
 	color:white;
-	background-color:#A2ACB0 !important;
+	background-color:#949DA1 !important;
 	border-color:#949DA1;
 	width:150px;
 }
@@ -114,11 +127,15 @@ min-width:270px;
 	border-color:#8D9599;
 }
 
+.edit-avatar {
+	padding-top:20px !important;
+}
+
 .status {
 	text-align:center;
 	float:left;
 	color:white;
-	width:55%;
+	width:57%;
 	font-size:1.2em;
 
 }

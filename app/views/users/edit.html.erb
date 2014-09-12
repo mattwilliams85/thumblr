@@ -1,0 +1,15 @@
+<div class="body">
+
+<%= render "layouts/navbar" %>
+
+<div class="edit">
+	<div class="avatar">
+		<%= image_tag("avatar2.jpg", :alt => "rss feed") %>
+	</div>
+	<div class="row-fluid edit-avatar">
+			<%= link_to "Edit Profile Pic", edit_user_path(@user), :class => "btn btn-default"%>
+		</div>
+	<div class="status">
+		
+	</div>
+</div>
