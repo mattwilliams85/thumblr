@@ -6,10 +6,17 @@
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#">PROFILE</a>
+                    <a href="#">SETTINGS</a>
                 </li>
                 <li>
                     <a href="#">DISCOVER</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <% if current_user %>
+                        <%= link_to "Logout", session_path("current"), method: "delete" %>
+                    <% end %>
                 </li>
             </ul>
         </div>
