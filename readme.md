@@ -3,6 +3,7 @@
 ## About
 
 Part of a portfolio project and the Epicodus assessment for convential rails.
+Styling is currently turned off for developmental purposes
 
 ## Setup
 
