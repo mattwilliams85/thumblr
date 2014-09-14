@@ -1,0 +1,12 @@
+<div class="body">
+<h2> Upload Photo </h2>
+
+<%= form_for [current_user, @photo], :html => { :multipart => true } do |f| %>
+  <%= f.file_field :photo %> <br>
+  Caption: 
+  <%= f.text_field :name %> <br><br>
+    <%= f.check_box  :is_avatar %> Profile Pic? <br><br>
+    <%= f.submit("Post!", :class => "btn btn-default")  %>
+
+<% end %>
+</div>
