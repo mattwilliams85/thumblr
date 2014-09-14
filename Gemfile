@@ -10,7 +10,6 @@ gem 'turbolinks'
 gem 'bcrypt'
 gem 'capybara'
 gem 'paperclip'
-gem 'aws-sdk'
 gem 'rails_12factor'
 
 

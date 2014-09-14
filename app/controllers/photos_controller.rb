@@ -6,7 +6,8 @@ class PhotosController < ApplicationController
 	def create
 		@user = User.find(params[:user_id])
 		@photo = Photo.new(photo_params)
-		sfd
+		@photo.update(:user_id => @user.id)
+		@photo.update(:is_avatar => params[:photo][:is_avatar])
 		if @photo.save
 			redirect_to user_path(@user)
 		else 

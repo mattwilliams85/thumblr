@@ -5,3 +5,4 @@ development:
 test:
   adapter: postgresql
   database: news_test
+

@@ -17,11 +17,28 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
+		@avatar = has_avatar?
 	end
 
 	def edit
 		@user = User.find(params[:id])
+		@avatar = has_avatar?
 	end
+
+	def has_avatar?
+		photos = []
+		photos << Photo.where(:user_id => @user.id)
+		photos.flatten.each do |photo|
+			if photo.is_avatar
+				@result = photo
+				break
+			else
+				@result = nil
+			end
+		end
+		@result
+	end
+
 
 private
 	def user_params
