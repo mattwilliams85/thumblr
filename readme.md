@@ -14,7 +14,7 @@ Styling is currently turned off for developmental purposes
 
 ## Meta
 
-2 September 2014
+14 September 2014
 
 
 [Matthew Williams](http://github.com/mattwilliams85)
