@@ -1,5 +1,5 @@
 <% if @avatar %>
-	<%= image_tag @avatar.photo.url, :alt => "rss feed" %>
+	<%= image_tag @avatar.photo.url(:medium), :alt => "rss feed" %>
 <% else %>
 	<%= image_tag("no_image.jpg", :alt => "rss feed") %> 
 <% end %>

@@ -1,0 +1,10 @@
+<div class="body">
+<h2> Change Avatar </h2>
+<%= image_tag @photo.photo.url(:medium), :alt => "rss feed" %>
+<%= form_for [current_user, @photo], :html => { :multipart => true } do |f| %>
+  <%= f.file_field :photo%> <br>
+  Caption: 
+  <%= f.text_field :name %> <br><br>
+  <%= f.submit("Post!", :class => "btn btn-default")  %>
+<% end %>
+</div>

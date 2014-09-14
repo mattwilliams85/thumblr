@@ -7,7 +7,18 @@
 		<%= render "avatar" %>
 	</div>
 	<div class="row-fluid edit-avatar">
-			<%= link_to "Edit Profile Pic", edit_user_path(@user), :class => "btn btn-default"%>
+			<% if @avatar %>
+				<%= link_to "Edit Profile Pic", edit_user_photo_path(@user, @avatar), :class => "btn btn-default"%>
+			<% else %>
+				<p> Add Avatar </p>
+				<%= form_for [current_user, @photo], :html => { :multipart => true } do |f| %>
+					<%= f.file_field :photo %> <br>
+					Caption: 
+					<%= f.text_field :name %> <br><br>
+				    <%= f.submit("Post!", :class => "btn btn-default")  %>
+			  	<% end %>
+			<% end %>
+</div>
 		</div>
 	<div class="status">
 		
