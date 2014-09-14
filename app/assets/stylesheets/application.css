@@ -14,7 +14,7 @@
  *= require_self
  */
 
-input {
+/*input {
     border: 0px none;
     border-bottom:1px solid #C2C1BF;
     font-size: 20px;
@@ -55,8 +55,7 @@ html, body {
 
 .edit-form input {
 	opacity:0.5;
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  
 }
 
 .blue {
@@ -247,4 +246,4 @@ form {
 	padding-bottom:40px;
 	width:27%;
 	box-shadow: 0 10px 40px #110457;
-}
+}*/
