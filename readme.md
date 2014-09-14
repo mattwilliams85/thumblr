@@ -2,7 +2,8 @@
 
 ## About
 
-Part of a portfolio project and the Epicodus assessment for convential rails.
+Part of a portfolio project and the Epicodus assessment for convential rails. Currently lets you create an account, login, and create/set an avatar photo.
+
 Styling is currently turned off for developmental purposes
 
 ## Setup
